@@ -40,9 +40,9 @@
 }
 
 .title {
-  margin: 0;
+  margin: 80px 0 30px;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 30px;
 }
 
 .title,
@@ -126,4 +126,21 @@
   .logo img {
     filter: invert(1);
   }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    translate: 0 20px;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    translate: 0 0;
+  }
+}
+
+.appear {
+  animation: appear 0.5s both;
 }
